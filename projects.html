@@ -3,19 +3,140 @@
 <header>
     <title>Aidan Barton</title>
     <link rel="icon" href="pictures/icon.png">
-    <link rel="stylesheet" href="style.css">
 </header>
- 
-<div id="nav">
-    <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="projects.html">PROJECTS</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-    </ul> 
-</div>
- 
-<div id="body">
-    projects
-</div>
- 
+
+<style>
+
+div.header ul
+{
+    list-style-type: none;
+    display: inline-block;
+}
+
+div.header li
+{
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+li a
+{
+    text-decoration: none;
+    color: #f2f2f2;
+    display: inline-block;
+    text-align: center;
+}
+
+li a:hover
+{
+    font-style: italic;
+    color: #e6ffff;
+}
+
+
+ul.page
+{
+    list-style-type: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
+
+ul.page li
+{
+    display: block;
+    width: 100%;
+}
+
+div.header
+{
+    background: #262626;
+}
+
+div.content
+{
+    left: 0;
+    width: 75%;
+    height: 100%;
+    padding: 0px;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+}
+
+div.content-block
+{
+    margin: 20;
+    border-radius: 2px;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px 10px #e6e6e6;
+    display: block;
+    width: 95%;
+}
+
+div.side
+{
+    right: 0;
+    width: 25%;
+    height: 100%;
+    padding: 0px;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+}
+
+div.side-block
+{
+    margin: 20;
+    border-radius: 2px;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px 10px #e6e6e6;
+    display: block;
+    text-align: center;
+    width: 95%;
+}
+    
+img.portrait
+{
+    border-radius: 50%;
+    height: 200;
+    width: 200;
+}
+
+body
+{
+    background: #f2f2f2;
+    color: #262626;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+}
+</style>
+
+<body>
+    
+    <div class="header">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <ul class="page">
+        </ul>
+    </div><div class="side">
+        <ul class="page">
+        </ul>
+    </div>
+
+</body>
+
 </html>
