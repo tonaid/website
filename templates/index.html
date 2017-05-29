@@ -1,0 +1,65 @@
+{% extends base.html %}
+{% block content %}
+<div class="section1">
+    <h1>Aidan Barton</h1>
+    <img src="static/pictures/me.jpg" alt="me" class="img-circle" height="400" width="400">
+</div>
+
+<div class="section2">
+    <h1>Who am I?</h1>
+    <p>
+        My name is Aidan Barton. 
+        I am a senior at Virginia Tech, majoring in Computer Science with a minor in Math and Cyber security.  
+        Currently, I am interning at Rackspace on the Email Anti-Abuse team. 
+        I am also an undergraduate researcher at the Hume Center for National Security and Technology.  
+        When I am not on my computer I enjoy most outdoors activities such as hiking, mountain biking and rock climbing. 
+        In other words, if there is a mountain involved, I am on it!
+    </p>
+</div>
+
+<div class="section3">
+    <div class="column">
+        <img src="static/pictures/VATech.png">
+        <p>
+            Expected graduation in spring 2018. 
+I currently have  a cumulative GPA of 3.4 and an in major GPA of 3.6. 
+As I mentioned earlier I am majoring in computer science with minors in math and cyber security. 
+I am focusing on the systems and networking track of computer science.
+        </p>
+    </div>
+    
+    <div class="column">
+        <img src="static/pictures/Rackspace-Logo-png.png" height="60%" width="60%">
+        <p>
+            As an intern at Rackspace, I will be working on Mat Grove's  Email Anti-Abuse team.  
+The team is responsible for detecting and stopping bad guys from abusing the Rackspace email system (spamming, phishing, etc). 
+Currently, I am building a new postmaster site for the team. 
+This site will be used by other postmasters in order to obtain useful information such as their IP reputation, connecting IPs, explain why they can't send or receive email from Rackspace, and why their mailbox might have been shut down. 
+Basically, a one stop shop for information postmasters might need from Rackspace.
+        </p>
+    </div>
+    
+    <div class="column">
+        <img src="static/pictures/VATech.png">
+        <p>
+            Click <a href="static/Krauss_VT_TRACTS.pdf">here</a> to see my Hume Center work.
+        </p>
+        <p>
+            The research involved trying to predict user behavior by looking at packet inter-arrival time. 
+Since we only looked at packet inter-arrival time there is no reason to decrypt the packets.  
+Avoiding decrypting packets means people get less frustrated with regards to privacy. 
+We found a clear distinction between audio and video streaming; however, web browsing looked like a combo of both.
+        </p>
+    </div>
+
+    <div class="column">
+        <img src="static/pictures/GitHub-Logo.png" height="30%" width="30%">
+        <p>
+            Click <a href="https://github.com/tonaid">here</a> for my GitHub.
+        </p>
+        <p>
+            In the process of puting my personal projects onto GitHub.
+        </p>
+    </div>
+</div>
+{% endblock %}

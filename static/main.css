@@ -46,6 +46,7 @@ p a:hover
     display: inline-block;
     font-weight: bold;
 	color: #474e5d;
+    vertical-align: middle;
 }
 
 .navlink:hover
