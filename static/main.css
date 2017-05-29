@@ -60,9 +60,7 @@ p a:hover
 	height: 500px;
 	text-align: center;
 	padding: 20px;
-	background-image: url("back.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
+	background: rgba(0, 88, 255, 0.81);
 }
 
 .section2
