@@ -62,7 +62,7 @@ p a:hover
 	padding: 20px;
 	background-image: url("back.jpg");
 	background-repeat: no-repeat;
-	background-position: middle top;
+	background-position: middle bottom;
 }
 
 .section2
