@@ -57,10 +57,12 @@ p a:hover
 
 .section1
 {
-	background: rgba(0, 88, 255, 0.81);
 	height: 500px;
 	text-align: center;
 	padding: 20px;
+	background-image: url("back.jpg");
+	background-repeat: no-repeat;
+	background-position: middle;
 }
 
 .section2
