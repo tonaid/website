@@ -6,59 +6,89 @@
     <link type="img/png" rel="icon" href="static/pictures/favicon.png"/>
   </head>
   <body>
-    <div class="section1">
-      <h1>Aidan Barton</h1>
-      <img src="static/pictures/me.jpg" alt="me" class="img-circle" height="400" width="400">
-    </div>
-    <div class="section2">
-      <h2>Who am I?</h2>
-      <p>
-        My name is Aidan Barton.
-        I am a senior at Virginia Tech, majoring in Computer Science with a minor in Math and Cyber security.
-        Currently, I am interning at Rackspace on the Email Anti-Abuse team.
-        I am also an undergraduate researcher at the Hume Center for National Security and Technology.
-        When I am not on my computer I enjoy most outdoors activities such as hiking, mountain biking and rock climbing.
-        In other words, if there is a mountain involved, I am on it!
-      </p>
-    </div>
-    <div class="section3">
-        <div class="column">
-          <img src="static/pictures/VATech.png">
-          <p>
-            Expected graduation in spring 2018.
-      I currently have  a cumulative GPA of 3.4 and an in major GPA of 3.6.
-      As I mentioned earlier I am majoring in computer science with minors in math and cyber security.
-      I am focusing on the systems and networking track of computer science.
-          </p>
+    <div class="main-section">
+      <div class="portrait-section">
+        <img src="static/pictures/me.jpg" class="portrait">
+      </div>
+      <div class="data">
+        <div class="tabs-section">
+          <div class="tabs">
+            <ul class="tabs" role="tablist">
+              <li>
+                <input type="radio" name="tabs" id="tab1" checked/>
+                <label for="tab1">Who</label>
+                <div class="tab-content" id="tab-content1" role="tabpanel">
+                  My name is Aidan Barton. I am a senior at Virginia Tech, majoring in Computer
+                  Science with a minor in Math. Currently, I am working at Rackspace on the Email
+                  Anti-Abuse team. When I am not on my computer I enjoy most outdoors activities
+                  such as hiking, mountain biking and rock climbing. In other words, if there is a
+                  mountain involved, I am on it!
+                </div>
+              </li>
+              <li>
+                <input type="radio" name="tabs" id="tab2"/>
+                <label for="tab2">VT</label>
+                <div class="tab-content" id="tab-content2" role="tabpanel">
+                  <p>
+                    Expected graduation in spring 2018.
+                    I currently have  a cumulative GPA of 3.4 and an in major GPA of 3.6.
+                    I am majoring in computer science with a minor in math. I am focusing on the
+                    systems and networking track of computer science.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <input type="radio" name="tabs" id="tab3"/>
+                <label for="tab3">Rackspace</label>
+                <div class="tab-content" id="tab-content3" role="tabpanel">
+                  <p>
+                    During the summer of 2017 I was an intern at Rackspace. As an intern I was put
+                    on a team with other interns and we were given free reign to build
+                    Rackspace a new
+                    <a target="_blank" href="https://postmaster.apps.rackspace.com/home">Postmaster</a>
+                    site. I also worked on the Anti-abuse team, I created Ansible playbooks to
+                    provision thier servers.
+                  </p>
+                  <p>
+                    After the intership was finished they asked me to stick
+                    around for a Co-op during the Fall 2017 semester, which I accepted. I am now
+                    working on the anti-abuse team full time during the co-op. The team is
+                    responsible for detecting and stopping bad
+                    guys from abusing the Rackspace email system (spamming, phishing, etc).
+                  </p>
+                  <p>
+                    While at Rackspace I have become familiar with
+                    <a target="_blank" href="https://www.docker.com/">Docker</a>,
+                    <a target="_blank" href="https://www.ansible.com/">Ansible</a>,
+                    <a target="_blank" href="https://www.vagrantup.com/">Vagrant</a>,
+                    <a target="_blank" href="https://uwsgi-docs.readthedocs.io/en/latest/">uWSGI</a>
+                    and
+                    <a target="_blank" href="http://flask.pocoo.org/">Flask</a>.
+                    I expect to learn even more during my co-op.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <input type="radio" name="tabs" id="tab4"/>
+                <label for="tab4">Hume Center</label>
+                <div class="tab-content" id="tab-content4" role="tabpanel">
+                  <p>
+                    Click <a target="_blank" href="static/Krauss_VT_TRACTS.pdf">here</a> to see my
+                    Hume Center work.
+                  </p>
+                  <p>
+                    The research involved trying to predict user behavior by looking at packet
+                    inter-arrival time. Since we only looked at packet inter-arrival time there is
+                    no reason to decrypt the packets. Avoiding decrypting packets means people get
+                    less frustrated with regards to privacy. We found a clear distinction between
+                    packet inter-arrival time of audio and video streaming; however, more research is needed to predict other activities.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="column">
-          <img src="static/pictures/Rackspace-Logo-png.png" height="60%" width="60%">
-          <p>
-            As an intern at Rackspace, I will be working on Mat Grove's  Email Anti-Abuse team. 
-      The team is responsible for detecting and stopping bad guys from abusing the Rackspace email system (spamming, phishing, etc).
-      Currently, I am building a new postmaster site for the team.
-      This site will be used by other postmasters in order to obtain useful information such as their IP reputation, connecting IPs, explain why they can't send or receive email from Rackspace, and why their mailbox might have been shut down.
-      Basically, a one stop shop for information postmasters might need from Rackspace.
-            While at Rackspace I have become familiar with
-            <a target="_blank" href="https://www.docker.com/">Docker</a>,
-            <a target="_blank" href="https://www.ansible.com/">Ansible</a>,
-            <a target="_blank" href="https://www.vagrantup.com/">Vagrant</a>,
-            <a target="_blank" href="https://uwsgi-docs.readthedocs.io/en/latest/">uWSGI</a>, and
-            <a target="_blank" href="http://flask.pocoo.org/">Flask</a>.
-          </p>
-        </div>
-        <div class="column">
-          <img src="static/pictures/VATech.png">
-          <p>
-            Click <a target="_blank" href="static/Krauss_VT_TRACTS.pdf">here</a> to see my Hume Center work.
-          </p>
-          <p>
-            The research involved trying to predict user behavior by looking at packet inter-arrival time.
-      Since we only looked at packet inter-arrival time there is no reason to decrypt the packets.
-      Avoiding decrypting packets means people get less frustrated with regards to privacy.
-      We found a clear distinction between audio and video streaming; however, web browsing looked like a combo of both.
-          </p>
-        </div>
+      </div>
     </div>
   </body>
 </html>
