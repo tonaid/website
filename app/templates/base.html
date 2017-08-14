@@ -9,13 +9,21 @@
     <div class="main-wrapper">
       <nav>
         <ul>
-          <li class="exper"><a href="{{ nav_hrefs['exper'] }}">experience</a></li>
+          <li class="exper">
+            <a href="{{ nav_hrefs['exper'] }}">
+              {% if exper_sub != None %}
+              experience : <span class="highlight">{{ exper_sub }}</span>
+              {% else %}
+              experience
+              {% endif %}
+            </a>
+          </li>
           <li class="about"><a href="{{ nav_hrefs['about'] }}">about</a></li>
         </ul>
       </nav>
       {% block body %}
       {% endblock %}
-      <div class="footer">
+      <div class="footer fadein">
         <ul>
           <li>
             <p>Contact me:</p>

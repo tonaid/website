@@ -2,12 +2,18 @@
     font-family: slab;
     src: url(fonts/JosefinSlab-Light.ttf);
 }
+@font-face {
+    font-family: Ubuntu;
+    src: url(fonts/Ubuntu-Light.ttf);
+}
+
+/*#b5ffbf;*/
 
 body
 {
   padding: 0px;
   margin: 0px;
-  font-family: slab;
+  font-family: Ubuntu;
   color: #d0d0d0;
   background: #2f343f;
   position: relative;
@@ -18,6 +24,8 @@ body
 
 .main-wrapper {
   padding: 0px;
+  padding-left: 10vw;
+  padding-right: 10vw;
   margin: 0px;
 }
 
@@ -35,12 +43,18 @@ nav {
 nav a {
   text-decoration: none;
   color: #d0d0d0;
+  text-shadow: 0px 0px 10px black;
+}
+
+nav a:hover {
+  text-decoration: overline;
+  font-weight: bold;
 }
 
 nav a[href='#'] {
-  color: #d0d0d0;
+  text-decoration: line-through;
   font-weight: bold;
-  text-shadow: 0px 0px 10px black;
+  color: #b5ffbf;
 }
 
 nav ul {
@@ -72,49 +86,55 @@ nav ul li.about {
   z-index: -10;
 }
 
-.intro-p .intro-highlight {
+.highlight {
   font-weight: bold;
+  color: #b5ffbf;
   text-shadow: 0px 0px 10px black;
 }
 
 .intro-p#intro1 {
-  animation: intro-left;
-  animation-duration: 1.3s;
+  animation: intro-right;
+  animation-duration: 1.2s;
   animation-timing-function: cubic-bezier(1,0,.25,1);
   transform: translate(10vw);
 }
 .intro-p#intro2 {
-  animation: intro-right;
-  animation-duration: 1.3s;
+  animation: intro-left2;
+  animation-duration: 1.4s;
   animation-timing-function: cubic-bezier(1,0,.25,1);
-  transform: translate(-10vw);
+  transform: translate(-15vw);
 }
 .intro-p#intro3 {
-  animation: intro-left;
-  animation-duration: 1.3s;
+  animation: intro-right;
+  animation-duration: 1.6s;
   animation-timing-function: cubic-bezier(1,0,.25,1);
   transform: translate(10vw);
 }
 .intro-p#intro4 {
-  animation: intro-right;
-  animation-duration: 1.3s;
+  animation: intro-left;
+  animation-duration: 1.8s;
   animation-timing-function: cubic-bezier(1,0,.25,1);
   transform: translate(-10vw);
 }
-@keyframes intro-left {
+@keyframes intro-right {
   from{transform: translate(0);}
   to{transform: translate(10vw);}
 }
-@keyframes intro-right {
+@keyframes intro-left {
   from{transform: translate(0);}
   to{transform: translate(-10vw);}
+}
+@keyframes intro-left2 {
+  from{transform: translate(0);}
+  to{transform: translate(-15vw);}
 }
 
 .experience {
   margin: 0px;
+  margin-left: -10vw;
   padding: 0px;
-  margin-top: 120vh;
-  width: 100%;
+  margin-top: 98vh;
+  width: 100vw;
   height: 100%;
   background: #2f343f;
   box-shadow: 0px -1px 10px black;
@@ -152,7 +172,7 @@ nav ul li.about {
 
 .experience ul li a:hover {
   text-decoration: none;
-  color: #d0d0d0;
+  color: #b5ffbf;
   animation: subtl;
   animation-duration: 1s;
   text-shadow: 0px 0px 10px black;
@@ -166,9 +186,49 @@ nav ul li.about {
   to{transform: matrix(1,0,0,1,5,0)};
 }
 
+.exper-main {
+  width: 100%;
+  font-size: 5vw;
+  background: #2f343f;
+  text-align: center;
+}
+
+.exper-main p#p1 {
+  animation: exper-main-p-left;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(1,0,.25,1);
+}
+.exper-main p#p2 {
+  animation: exper-main-p-right;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(1,0,.25,1);
+}
+
+@keyframes exper-main-p-right {
+  from{transform: translate(20vw);}
+  to{transform: translate(0vw);}
+}
+@keyframes exper-main-p-left {
+  from{transform: translate(-20vw);}
+  to{transform: translate(0vw);}
+}
+
+.exper-main img.exper-intro-pic {
+  width: 33%;
+  animation: exper-img-intro;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(1,0,.25,1);
+}
+
+@keyframes exper-img-intro {
+  from{opacity: 0;transform:scale(0);}
+  to{opacity: 100;transform:scale(1);}
+}
+
 .about-section {
   margin: 0px;
   padding: 0px;
+  padding-top: 1vh;
   width: 100%;
   height: 100%;
   background: #2f343f;
@@ -184,26 +244,36 @@ nav ul li.about {
 
 .about-p#about1 {
   animation: about-left;
-  animation-duration: 1.3s;
+  animation-duration: 1.2s;
   animation-timing-function: cubic-bezier(1,0,.25,1);
 }
 .about-p#about2 {
   animation: about-right;
-  animation-duration: 1.3s;
+  animation-duration: 1.4s;
   animation-timing-function: cubic-bezier(1,0,.25,1);
 }
 .about-p#about3 {
   animation: about-left;
-  animation-duration: 1.3s;
+  animation-duration: 1.6s;
   animation-timing-function: cubic-bezier(1,0,.25,1);
 }
+.fadein {
+  animation: fadein;
+  animation-duration: 1.6s;
+  animation-timing-function: cubic-bezier(1,0,.25,1);
+}
+@keyframes fadein {
+  from{opacity: 0;}
+  to{opacity: 100;}
+}
+
 @keyframes about-left {
   from{opacity: 0;transform: matrix(1,0,0,1,150,0);}
   to{opacity: 100;transform: matrix(1,0,0,1,0,0);}
 }
 @keyframes about-right {
   from{opacity: 0;transform: matrix(1,0,0,1,-150,0);}
-  to{opacity: 100transform: matrix(1,0,0,1,0,0);}
+  to{opacity: 100;transform: matrix(1,0,0,1,0,0);}
 }
 
 .footer {
@@ -211,7 +281,9 @@ nav ul li.about {
   text-align: center;
   padding: 0;
   padding-top: 10vh;
-  margin: 0;
+  padding-bottom: 10vh;
+  margin-left: -10vw;
+  width: 100vw;
 }
 
 .footer ul {
@@ -235,5 +307,6 @@ nav ul li.about {
 
 .footer ul li a:hover {
   font-weight: bold;
+  color: #b5ffbf;
   text-shadow: 0px 0px 10px black;
 }
