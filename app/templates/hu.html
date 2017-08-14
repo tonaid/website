@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="exper-main">
+  <img src="/static/pictures/vt.png" class="exper-intro-pic"/>
+  <p id="p1">
+    During my junior year at VT, I participated in under-graduate reaserch at the
+    <span class="highlight">Hume Center</span> for National Security and Technology.
+  </p>
+  <p id="p2">
+    The research involved trying to predict user behavior by looking at <span class="highlight">packet
+    inter-arrival time</span>. Since we only looked at packet inter-arrival time there is
+    no reason to decrypt the packets. Avoiding decrypting packets means people get
+    less frustrated with regards to privacy.
+  </p>
+  <p id="p1">
+    We found a clear distinction between packet inter-arrival time of audio and video streaming; however,
+    more research is needed to predict other activities.
+  </p>
+  <p id="p2">
+    Click <a class="highlight" target="_blank" href="/static/Krauss_VT_TRACTS.pdf">here</a> to see my
+    Hume Center work.
+  </p>
+</div>
+{% endblock %}
