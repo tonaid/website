@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aidan Barton</title>
+    <link type="text/css" rel="stylesheet" href="/static/main.css"/>
+    <link type="img/png" rel="icon" href="/static/pictures/favicon.png"/>
+  </head>
+  <body>
+  <nav>
+    <ul>
+      <li class="exper"><a href="{{ nav_hrefs['exper'] }}">experience</a></li>
+      <li class="about"><a href="{{ nav_hrefs['about'] }}">about</a></li>
+    </ul>
+  </nav>
+    {% block body %}
+    {% endblock %}
+  </body>
+</html>
