@@ -155,3 +155,14 @@ p a:hover
   from{opacity: 0;}
   to{opacity: 100;}
 }
+
+@media only screen and (max-device-width: 1025px) {
+  .portrait-section {
+    display: none;
+  }
+  .data {
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+}
