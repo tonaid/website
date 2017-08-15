@@ -78,12 +78,10 @@ nav ul li.about {
 .intro {
   font-size: 5vw;
   text-align: center;
-  position: fixed;
   height: 100vh;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: -10;
 }
 
 .highlight {
@@ -129,11 +127,15 @@ nav ul li.about {
   to{transform: translate(-15vw);}
 }
 
+.intro-p a {
+  text-decoration: none;
+}
+
 .experience {
   margin: 0px;
   margin-left: -10vw;
   padding: 0px;
-  margin-top: 98vh;
+  position: relative;
   width: 100vw;
   height: 100%;
   background: #2f343f;
@@ -292,7 +294,7 @@ nav ul li.about {
   width: 100%;
   padding: 0;
   margin: 0;
-  font-size: 5vw;
+  font-size: 3vw;
 }
 
 .footer ul li p {
