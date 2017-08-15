@@ -7,8 +7,6 @@
     src: url(fonts/Ubuntu-Light.ttf);
 }
 
-/*#b5ffbf;*/
-
 body
 {
   padding: 0px;
@@ -43,7 +41,7 @@ nav {
 nav a {
   text-decoration: none;
   color: #d0d0d0;
-  text-shadow: 0px 0px 10px black;
+  text-shadow: 0px 0px 20px black;
 }
 
 nav a:hover {
@@ -78,7 +76,6 @@ nav ul li.about {
 .intro {
   font-size: 5vw;
   text-align: center;
-  height: 100vh;
   width: 100%;
   top: 0;
   left: 0;
@@ -87,7 +84,7 @@ nav ul li.about {
 .highlight {
   font-weight: bold;
   color: #b5ffbf;
-  text-shadow: 0px 0px 10px black;
+  text-shadow: 0px 0px 20px black;
 }
 
 .intro-p#intro1 {
@@ -139,7 +136,7 @@ nav ul li.about {
   width: 100vw;
   height: 100%;
   background: #2f343f;
-  box-shadow: 0px -1px 10px black;
+  box-shadow: 0px -1px 20px black;
 }
 
 .experience ul {
@@ -177,7 +174,7 @@ nav ul li.about {
   color: #b5ffbf;
   animation: subtl;
   animation-duration: 1s;
-  text-shadow: 0px 0px 10px black;
+  text-shadow: 0px 0px 20px black;
   transform: matrix(1,0,0,1,5,0);
   display: block;
   font-weight: bold;
@@ -310,5 +307,5 @@ nav ul li.about {
 .footer ul li a:hover {
   font-weight: bold;
   color: #b5ffbf;
-  text-shadow: 0px 0px 10px black;
+  text-shadow: 0px 0px 20px black;
 }
