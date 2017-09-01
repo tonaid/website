@@ -215,6 +215,7 @@ nav ul li.about {
 
 .exper-main img.exper-intro-pic {
   width: 33%;
+  padding-top: 3vh;
   animation: exper-img-intro;
   animation-duration: 1s;
   animation-timing-function: cubic-bezier(1,0,.25,1);
@@ -309,4 +310,13 @@ nav ul li.about {
   font-weight: bold;
   color: #b5ffbf;
   text-shadow: 0px 0px 20px black;
+}
+
+@media screen and (min-width: 720px) {
+    .exper-main {
+      width: 100%;
+      font-size: 2vw;
+      background: #2f343f;
+      text-align: center;
+    }
 }
